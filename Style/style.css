@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #c8d7d3 0%, #f4f4db 100%);
+  color: #333;
+  padding-bottom: 50px;
+}
+
+.navbar {
+  display: flex;    
+  align-items: center;
+  gap: 10px; 
+  padding: 10px 50px; 
+  background-color: #092f25;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 35px;
+  color: #25300c;
+  border-bottom: 4px solid rgb(187, 190, 190); 
+  padding-bottom: 8px; 
+  margin: 0 auto 30px auto; 
+  width: 55%; 
+}
+
+.tab-navigation {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background: #bfc6c3;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.tab-btn.active {
+  background: #113329;
+  color: white;
+}
+
+.hidden { 
+  display: none !important; 
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.container {
+  background: #365244;
+  padding: 20px;
+  flex: 2;
+  border-radius: 10px;
+  border: 1px solid #e1e8e5;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.container h2 {
+  margin-bottom: 12px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.pesan-sapi {
+  display: flex;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.pesan-sapi:hover {
+  border-color: #0a7a5c;
+  transform: translateX(5px);
+}
+
+.pesan-sapi label {
+  min-width: 120px;
+  background: #bfc6c3;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  border-right: 1px solid #ddd;
+  color: #141515;
+}
+
+.pesan-sapi input, 
+.pesan-sapi select {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+button {
+  background: #113329;
+  color: white;
+  border: none;
+  padding: 13px;
+  width: 100%;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #0a7a5c;
+  transform: translateY(-2px);
+}
+
+.status-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card, 
+.card1 {
+  background: #e3ece9;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-top: 6px solid #023226;
+  box-shadow: 0 8px 25px rgba(20, 21, 21, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover, 
+.card1:hover {
+  transform: translateX(4px);
+}
+
+.card img, 
+.card1 img {
+  width: 60px;
+  height: 60px;
+}
+
+.label {
+  font-size: 16px;
+  color: #1f190b;
+  margin-bottom: 5px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.value {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2D6A4F;
+}
+
+.table-container {
+  width: 90%;
+  margin: 30px auto;
+  background: #365244;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px #141515;
+}
+
+.table-title {
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+}
+
+.tabel-sapi {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.tabel-sapi thead th {
+  background: #023226;
+  color: white;
+  padding: 12px;
+  border: 1px solid #2e5f4f;
+}
+
+.tabel-sapi td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #2e5f4f; 
+  color: #ffffff;             
+  vertical-align: middle;
+}
+
+.tabel-sapi tbody tr:nth-child(odd) {
+  background: rgba(106, 123, 115, 0.9); 
+}
+
+.tabel-sapi tbody tr:nth-child(even) {
+  background: rgba(140, 143, 143, 0.8); 
+}
+
+.tabel-sapi td button {
+  background: transparent; 
+  border: none; 
+  width: auto;  
+  padding: 5px;             
+  cursor: pointer;            
+  transition: transform 0.2s; 
+  display: inline-block;
+}
+
+.tabel-sapi td button img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+  .main-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container, 
+  .status-side {
+    width: 100%;
+  }
+
+  .status-side {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
